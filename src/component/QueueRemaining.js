@@ -20,7 +20,9 @@ function QueueRemaining(props){
             }
           });
 
-          axios.get("https://oneline-copy-shop.herokuapp.com/queue")
+          axios.get("https://oneline-copy-shop.herokuapp.com/queue",{headers: {
+            'Access-Control-Allow-Origin': '*'}
+          },)
           .then(response =>{
             console.log(response.data)
             const {data} = response;

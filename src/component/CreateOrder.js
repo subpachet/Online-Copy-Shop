@@ -156,7 +156,9 @@ function CreateNewOrder(props){
                     numberOfCopies: numberOfCopies
 
                 }
-            }
+            },{headers: {
+                'Access-Control-Allow-Origin': '*'
+              }}
             ).then(response =>{
                 const {data} = response
               if(data.status.code === 1000){

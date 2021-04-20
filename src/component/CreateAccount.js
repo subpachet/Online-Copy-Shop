@@ -32,6 +32,10 @@ function CreateAccount(){
                 password:pw,
                 firstName:firstname,
                 lastName:lastname
+            },{
+                headers: {
+                'Access-Control-Allow-Origin': '*'
+              }
             }).then(response =>{
                 console.log(response.data)
                 const {data} = response;

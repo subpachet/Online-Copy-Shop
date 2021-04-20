@@ -51,7 +51,9 @@ function Login(){
                 userName:"",
                 password:"",
                 firstName:user.displayName.substr(0,user.displayName.indexOf(' ')),
-                lastName:user.displayName.substr(user.displayName.indexOf(' ')+1)})
+                lastName:user.displayName.substr(user.displayName.indexOf(' ')+1)},{headers: {
+                    'Access-Control-Allow-Origin': '*'
+                  }})
                 .then(response => {
                     console.log(response.data)
                     const {data} = response;
