@@ -157,7 +157,7 @@ function CreateNewOrder(props){
 
                 }
             },{headers: {
-                'Access-Control-Allow-Origin': '*'
+                'Access-Control-Allow-Origin': '*','Access-Control-Allow-Methods':'POST'
               }}
             ).then(response =>{
                 const {data} = response

@@ -16,7 +16,7 @@ function CheckOrder(props){
               // https://firebase.google.com/docs/reference/js/firebase.User
               setUser(currentUser);
               axios.get('https://oneline-copy-shop.herokuapp.com/checkorder/'+currentUser.uid, {headers: {
-                'Access-Control-Allow-Origin': '*'
+                'Access-Control-Allow-Origin': '*','Access-Control-Allow-Methods':'GET'
               }})
               .then(response=> {
                     console.log(response.data)

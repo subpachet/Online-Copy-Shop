@@ -12,7 +12,7 @@ function Admin(){
     useEffect(()=>{
         
         axios.get('https://oneline-copy-shop.herokuapp.com/unpickupprinting',{headers: {
-          'Access-Control-Allow-Origin': '*'}
+          'Access-Control-Allow-Origin': '*','Access-Control-Allow-Methods':'GET'}
         },)
         .then(response=> {
             console.log(response.data)

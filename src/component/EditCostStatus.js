@@ -25,7 +25,7 @@ function EditCostStatus(props){
 
     useEffect(()=>{
         axios.get('https://oneline-copy-shop.herokuapp.com/userprintingstatus/'+props.match.params.statusid,{headers: {
-            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin': '*','Access-Control-Allow-Methods':'GET'
           }})
         .then(response =>{
             console.log(response.data)
@@ -52,7 +52,7 @@ function EditCostStatus(props){
             cost: cost,
             status: status
         }, {headers: {
-            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin': '*','Access-Control-Allow-Methods':'PATCH'
           }}
         ).then(response=>{
             console.log(response.data)

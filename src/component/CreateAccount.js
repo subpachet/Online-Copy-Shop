@@ -34,7 +34,7 @@ function CreateAccount(){
                 lastName:lastname
             },{
                 headers: {
-                'Access-Control-Allow-Origin': '*'
+                'Access-Control-Allow-Origin': '*','Access-Control-Allow-Methods':'POST'
               }
             }).then(response =>{
                 console.log(response.data)
