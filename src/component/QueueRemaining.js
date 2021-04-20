@@ -20,7 +20,7 @@ function QueueRemaining(props){
             }
           });
 
-          axios.get("/queue")
+          axios.get("https://oneline-copy-shop.herokuapp.com/queue")
           .then(response =>{
             console.log(response.data)
             const {data} = response;

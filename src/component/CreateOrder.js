@@ -136,7 +136,7 @@ function CreateNewOrder(props){
         uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
             console.log('File available at', downloadURL);
 
-            axios.post('/userprinting/create',
+            axios.post('https://oneline-copy-shop.herokuapp.com/userprinting/create',
             {
                 fileStorage:{
                     fileName :uploadFile.name,

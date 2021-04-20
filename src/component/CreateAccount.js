@@ -25,7 +25,7 @@ function CreateAccount(){
                 // Signed in 
                 var user = userCredential.user;
                 console.log(user.uid);
-                axios.post('/user/create',{   id: user.uid,
+                axios.post('https://oneline-copy-shop.herokuapp.com/user/create',{   id: user.uid,
                 email :email,
                 phone:phone,
                 userName:username,

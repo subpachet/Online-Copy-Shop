@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://oneline-copy-shop.herokuapp.com",
+  
   "eslintConfig": {
     "extends": [
       "react-app",

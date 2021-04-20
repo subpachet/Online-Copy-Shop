@@ -24,7 +24,7 @@ function EditCostStatus(props){
     
 
     useEffect(()=>{
-        axios.get('/userprintingstatus/'+props.match.params.statusid)
+        axios.get('https://oneline-copy-shop.herokuapp.com/userprintingstatus/'+props.match.params.statusid)
         .then(response =>{
             console.log(response.data)
             const {data} = response;
@@ -45,7 +45,7 @@ function EditCostStatus(props){
 
     const onUpdateCostStatus = (e) =>{
         e.preventDefault();
-        axios.patch('/edit/coststatus/'+props.match.params.statusid,
+        axios.patch('https://oneline-copy-shop.herokuapp.com/edit/coststatus/'+props.match.params.statusid,
         {
             cost: cost,
             status: status

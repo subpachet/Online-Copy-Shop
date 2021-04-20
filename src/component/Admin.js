@@ -11,7 +11,7 @@ function Admin(){
     const [cost,setCost] = useState(0);
     useEffect(()=>{
         
-        axios.get('/unpickupprinting')
+        axios.get('https://oneline-copy-shop.herokuapp.com/unpickupprinting')
         .then(response=> {
             console.log(response.data)
             const {data} = response;

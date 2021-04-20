@@ -45,7 +45,7 @@ function Login(){
             // The signed-in user info.
             var user = result.user;
             console.log(user);
-            axios.post('/user/create',{   id: user.uid,
+            axios.post('https://oneline-copy-shop.herokuapp.com/user/create',{   id: user.uid,
                 email :user.email,
                 phone: "",
                 userName:"",
